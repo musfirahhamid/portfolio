@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/output.css">
+     <!--                                        jquery              -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--                                 fontawesome icon                       -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <!--                                  font family                   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Libre+Franklin:wght@300;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-main font-libra overflow-x-hidden scroll-smooth scroll-m-12">
+<!--header-->
+<nav
+class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
+>
+<div
+  class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+>
+  <div
+    class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+  >
+    <a
+      class=" inline-block mr-1 py-2"
+      href="index.html"
+      ><img src="/src/images/logo.png" alt="logo" class=" h-16 w-16"></a
+    ><button
+      class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+      type="button"
+      onclick="toggleNavbar('example-collapse-navbar')"
+    >
+      <i class="text-sky fa fa-align-right"></i>
+    </button>
+  </div>
+  <div
+    class="lg:flex flex-grow items-center bg-bgHover lg:bg-transparent lg:shadow-none hidden"
+    id="example-collapse-navbar"
+  >
+    <ul class="flex flex-col lg:flex-row list-none mr-auto lg:ml-20">
+      <li class="flex items-center">
+        <a
+          class="text-white hover:text-sky  px-3 py-4 lg:py-2 flex items-center text-sm transition hover:ease-linear hover:duration-500"
+          href="about.html"
+          >
+          About</a
+        >
+      </li>
+      <li class="flex items-center">
+        <a
+          class="text-white hover:text-sky   px-3 py-4 lg:py-2 flex items-center text-sm  transition hover:ease-linear hover:duration-500 "
+          href="#contact"
+          >
+          Contact</a
+        >
+      </li>
+    </ul>
+    <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+      <li class="flex items-center">
+        <a
+          class="lg:text-white lg:hover:text-sky transition hover:ease-linear hover:duration-500  px-3 py-4 lg:py-2 flex items-center text-xs uppercase  "
+          href="https://www.linkedin.com/in/frontendengineer/"
+          ><i
+            class="lg:text-gray-300  fab fa-linkedin text-heading1 text-lg leading-lg hover:text-sky transition hover:ease-linear hover:duration-500"
+          ></i
+          ><span class="lg:hidden inline-block ml-2 text-heading1 hover:text-sky transition hover:ease-linear hover:duration-500">Connect</span></a
+        >
+      </li>
+      <li class="flex items-center">
+        <a
+          class="lg:text-white lg:hover:text-sky  px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
+          href="https://twitter.com/musfirahhamid"
+          ><i
+            class="lg:text-gray-300 text-heading1 fab fa-twitter text-lg leading-lg hover:text-sky transition hover:ease-linear hover:duration-500"
+          ></i
+          ><span class="lg:hidden inline-block ml-2 text-heading1 hover:text-sky transition hover:ease-linear hover:duration-500">Tweet</span></a
+        >
+      </li>
+      <li class="flex items-center">
+        <a
+          class="lg:text-white lg:hover:text-sky  px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
+          href="https://github.com/musfirahhamid"
+          ><i
+            class="lg:text-gray-300 text-heading1 fab fa-github text-lg leading-lg hover:text-sky transition hover:ease-linear hover:duration-500"
+          ></i
+          ><span class="lg:hidden inline-block ml-2 text-heading1 hover:text-sky transition hover:ease-linear hover:duration-500">Star</span></a
+        >
+      </li>
+      <li class="flex items-center">
+        <a href="/src/musfirah.pdf"
+          class=" text-sky active:bg-bgHover text-xs text-center  px-4 py-3 rounded shadow hover:shadow-md outline outline-1 outline-sky lg:mr-1 lg:mb-0 ml-3 mb-3 hover:bg-bgHover transition hover:ease-linear hover:duration-500"
+          type="button"
+          
+        >
+         Resume
+      </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+  <!-- End of Header-->
+    <section id="about" class="mt-36 lg:mx-16 mx-8 lg:ml-44 mb-36">
+        <h1 class="text-heading1 font-bold text-4xl pb-7 underline underline-offset-4 decoration-4 decoration-heading1 lg:text-left text-center">About Me</h1>
+        <div class="flex justify-center lg:flex-row flex-col-reverse">
+           <div class="lg:w-5/12">
+               <p class="text-heading1 leading-7 text-justify pt-4">Hello! I am Musfirah Hamid, recent graduate Computer Systems Engineer.I enjoy creating things that live on the internet. My interest in web Development begin in 2020 when covid-19 hit the world and quarantined everything. My crave for softskills headed me towards Websites and I started building simple websites using HTML and CSS.Later on, my interest got high.</p>
+               <p class="text-heading1 pt-4 leading-7 lg:text-justify text-left">Covering the journey of two years, today I'm a <span class="text-sky">freelance web designer and  developer</span>, working with multiple clients with a number of diverse projects.
+               </p>
+               <p class="text-heading1 pt-4 leading-7 lg:text-justify text-left"> Regardless of your specific business requirements, in solving these challenges, you have a great chance of finding success online. My experience & passion lies in front-end Website development,Modern websites with combination of design, server technology, and interactive layers, I develop websites with most optimal user experience.</p>
+               <p class="text-heading1 pt-4 leading-7 lg:text-justify text-left">I have worked on a multitude of web and print based projects for a range of clients providing Web Design (Photoshop, Illustrator,Figma) and Development (HTML, CSS, JS, tailwind CSS, Sass, Bootstrap, Responsive Layouts) services.</p>
+              <div class="flex justify-center lg:justify-start">
+                <a href="/src/musfirah.pdf"
+                class=" text-sky active:bg-bgHover text-base text-center  px-4 py-3 rounded shadow hover:shadow-md outline outline-1 outline-sky lg:mr-1 lg:mb-0  mb-3 mt-5 hover:bg-bgHover"
+                type="button"
+                style="transition: all 0.15s ease 0s;"
+              >
+               Download Resume
+              </a>
+              </div>
+           </div>
+           <div class="border-4 border-sky rounded lg:ml-auto lg:mr-44 mx-8  h-80 lg:mt-20 w-64 mb-7">
+               <img src="/src/images/about.jpg" alt="about" class="-mt-3  -ml-4 rounded w-96 ">
+           </div>
+        </div>
+       </section>
+
+
+       <!--Contact Form-->
+<section id="contact" class="relative block py-24 lg:pt-0  lg:mt-80 mt-24">
+  <div class="container mx-auto px-4">
+   
+    <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+      <div class="w-full lg:w-6/12 px-4">
+        <h1 class="text-heading1 text-center text-3xl pt-16 lg:pt-5 pb-5 font-semibold">Reach Out To Me !!!!!!</h1>
+        <div class="flex justify-center mb-8">
+          <a href="tel:+923497818424" class="px-2">
+            <i class="fa fa-phone text-xl border rounded-full px-3 py-3 text-subHeading   hover:border-sky hover:text-sky"></i>
+ </a>
+          <a href="https://github.com/musfirahhamid" class="px-2">
+            <i class="fab fa-github text-xl border rounded-full px-3 py-3 text-subHeading   hover:border-sky hover:text-sky"></i>
+ </a>
+        <a href="https://twitter.com/musfirahhamid"class="px-2"><i class="fab fa-twitter text-xl border rounded-full px-3 py-3 text-subHeading  hover:border-sky hover:text-sky"></i></a>
+        <a href="https://www.linkedin.com/in/frontendengineer/"class="px-2"> <i class="fab fa-linkedin text-xl border rounded-full px-3 py-3 text-subHeading hover:border-sky hover:text-sky"></i></a>
+        </div>
+        <div
+          class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-bgHover"
+        >
+          <div class="flex-auto p-5 lg:p-10">
+            <h4 class="text-2xl text-subHeading font-semibold">Want to work with me?</h4>
+            <p class="leading-relaxed mt-1 mb-4 text-subHeading">
+              Complete this form and I will get back to you in 24 hours.
+            </p>
+            <form id="register">
+              <div class="relative w-full mb-3 mt-8">
+                <label
+                  class="block uppercase text-subHeading text-xs font-bold mb-2"
+                  for="full-name"
+                  >Full Name</label
+                ><input
+                name="Name"
+                  type="text"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  placeholder="Full Name"
+                  style="transition: all 0.15s ease 0s;"
+                />
+              </div>
+              <div class="relative w-full mb-3">
+                <label
+                  class="block uppercase text-subHeading text-xs font-bold mb-2"
+                  for="email"
+                  >Email</label
+                ><input
+                name="Email"
+                  type="email"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  placeholder="Email"
+                  style="transition: all 0.15s ease 0s;"
+                  required
+                />
+              </div>
+              <div class="relative w-full mb-3">
+                <label
+                  class="block uppercase text-subHeading text-xs font-bold mb-2"
+                  for="message"
+                  >Message</label
+                ><textarea
+                name="Subject"
+                  rows="4"
+                  cols="80"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  placeholder="Type a message..."
+                ></textarea>
+              </div>
+              <div class="text-center mt-6">
+                <button
+                id ="send" type="submit" name="send"
+                  class="bg-main text-sky active:bg-gray-700 text-sm  uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 hover:border border-sky transition hover:ease-linear hover:duration-500"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Contact-->
+
+
+<!--Footer-->
+<a href="#" class="flex justify-center text-center  text-subHeading hover:text-sky pb-3">&copy; All rights reserved to Musfirah</a>
+<!--End of footer-->
+
+      <script src="script.js"></script>
+</body>
+</html>
