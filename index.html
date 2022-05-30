@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/output.css">
+    <!--                                        jquery              -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--                                 fontawesome icon                       -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <!--                                  font family                   -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Libre+Franklin:wght@300;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-main font-libra overflow-x-hidden  ">
+    <nav
+    class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
+  >
+    <div
+      class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    >
+      <div
+        class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+      >
+        <a
+          class=" inline-block mr-1 py-2"
+          href="index.html"
+          ><img src="/src/images/logo.png" alt="logo" class=" h-16 w-16"></a
+        ><button
+          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button"
+          onclick="toggleNavbar('example-collapse-navbar')"
+        >
+          <i class="text-sky fa fa-align-right"></i>
+        </button>
+      </div>
+      <div
+        class="lg:flex flex-grow items-center bg-bgHover lg:bg-transparent lg:shadow-none hidden"
+        id="example-collapse-navbar"
+      >
+        <ul class="flex flex-col lg:flex-row list-none mr-auto lg:ml-20">
+          <li class="flex items-center">
+            <a
+              class="text-white hover:text-sky  px-3 py-4 lg:py-2 flex items-center text-sm transition hover:ease-linear hover:duration-500"
+              href="about.html"
+              >
+              About</a
+            >
+          </li>
+          <li class="flex items-center">
+            <a
+              class="text-white hover:text-sky   px-3 py-4 lg:py-2 flex items-center text-sm  transition hover:ease-linear hover:duration-500 "
+              href="#contact"
+              >
+              Contact</a
+            >
+          </li>
+        </ul>
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-sky transition hover:ease-linear hover:duration-500  px-3 py-4 lg:py-2 flex items-center text-xs uppercase  "
+              href="https://www.linkedin.com/in/frontendengineer/"
+              ><i
+                class="lg:text-gray-300  fab fa-linkedin text-heading1 text-lg leading-lg hover:text-sky transition hover:ease-linear hover:duration-500"
+              ></i
+              ><span class="lg:hidden inline-block ml-2 text-heading1 hover:text-sky transition hover:ease-linear hover:duration-500">Connect</span></a
+            >
+          </li>
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-sky  px-3 py-4 lg:py-2 flex items-center text-xs uppercase "
+              href="https://twitter.com/musfirahhamid"
+              ><i
+                class="lg:text-gray-300 text-heading1 fab fa-twitter text-lg leading-lg hover:text-sky transition hover:ease-linear hover:duration-500"
+              ></i
+              ><span class="lg:hidden inline-block ml-2 text-heading1 hover:text-sky transition hover:ease-linear hover:duration-500">Tweet</span></a
+            >
+          </li>
+          <li class="flex items-center">
+            <a
+              class="lg:text-white lg:hover:text-sky  px-3 py-4 lg:py-2 flex items-center text-xs uppercase"
+              href="https://github.com/musfirahhamid"
+              ><i
+                class="lg:text-gray-300 text-heading1 fab fa-github text-lg leading-lg hover:text-sky transition hover:ease-linear hover:duration-500"
+              ></i
+              ><span class="lg:hidden inline-block ml-2 text-heading1 hover:text-sky transition hover:ease-linear hover:duration-500">Star</span></a
+            >
+          </li>
+          <li class="flex items-center">
+            <a href="/src/musfirah.pdf"
+              class=" text-sky active:bg-bgHover text-xs text-center  px-4 py-3 rounded shadow hover:shadow-md outline outline-1 outline-sky lg:mr-1 lg:mb-0 ml-3 mb-3 hover:bg-bgHover transition hover:ease-linear hover:duration-500"
+              type="button"
+              
+            >
+             Resume
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Header-->
+<main>
+     <!--Hero-->
+         <section class="mt-36 lg:ml-44">
+             <div class="lg:px-4 px-8">
+                 <h1 class="text-sky lg:text-lg md:block hidden">Hi, &nbsp; my name is</h1>
+                 <h1 class="text-heading1 lg:text-7xl text-3xl font-bold tracking-widest leading-10 lg:pt-6">Musfirah Hamid.</h1>
+                 <h1 class="text-subHeading lg:text-3xl text-2xl font-bold tracking-widest lg:pt-9 pt-5">I Build momentum by building better websites.</h1>
+                 <p class="text-subHeading lg:pt-9 pt-5 lg:w-5/12 lg:text-left text-justify">I'm computer systems engineer based in Pakistan working as a <span class="text-sky">front-end web developer</span>. I am passionate about solving
+                    business problems through human-centered design.</p>
+                    <a href="#work"
+                    class=" text-sky active:bg-bgHover text-lg tracking-widest text-center  px-4 py-3 rounded shadow hover:shadow-md outline outline-1 outline-sky lg:mr-1 lg:mb-0  mb-3 mt-9 hover:bg-bgHover transition hover:ease-linear hover:duration-500"
+                    type="button" 
+                  >
+                   See my Work
+                 </a>
+             </div>
+         </section>
+  <!--End of Hero-->
+
+<!--Work-->
+<section id="work" class="mt-36 lg:ml-24 mb-14">
+    <h1 class="text-heading1 font-bold text-4xl pb-7 underline underline-offset-4 decoration-4 decoration-heading1 lg:text-left text-center">Websites I’ve Built</h1>
+    <!--Finance-->
+    <div class="flex lg:flex-row flex-col justify-around lg:mb-36 mb-16">
+      <div class="md:w-7/12">
+        <a href="https://tailwindcss-finance-website-landing-page.netlify.app/"><img src="/src/images/screely-1653904936951.png" alt="finance" class="w-full h-full rounded-lg"></a>
+      </div>
+      <!--text content-->
+      <div class="text-heading1 lg:w-5/12 lg:mr-24 lg:ml-10">
+        <h1 class="text-sky lg:text-right lg:mr-7 text-center lg:pt-0 pt-6">Featured Project</h1>
+        <h1 class=" text-4xl font-semibold lg:text-right transition hover:ease-linear hover:duration-500 hover:text-sky cursor-pointer pt-2 lg:pb-0 pb-2 lg:mr-7 text-center"><a href="https://tailwindcss-finance-website-landing-page.netlify.app/">e-Finance</a></h1>
+       
+          <ul class="lg:-ml-44 mx-5 bg-bgHover list-inside list-disc lg:mt-3 lg:px-8 px-4 py-2 lg:py-5 text-sm border border-bgHover rounded-lg">
+            <li>Finance is a striking, professional and modern free financial consulting website template.</li>
+            <li>With the up-to-the-minute minimalistic design, everyone will have a pleasant experience skimming
+              through your content regardless of the device they use.</li>
+            <li>It impacts everyone with a <span class="text-sky">full-screen slider, text and call-to-action buttons, scroll-to-animation,neat gallery, responsive video, testimonial section,timeline, contact form and social media icon</span>.  </li>
+          </ul>
+          <p class="lg:text-right text-center text-sm py-3 lg:mr-7">VS Code &nbsp; &nbsp; &nbsp; &nbsp; npm &nbsp; &nbsp; &nbsp; &nbsp; tailwind CSS &nbsp; &nbsp; &nbsp; &nbsp; Slick js &nbsp; &nbsp; &nbsp; &nbsp; HTML5</p>
+
+          <div class="flex flex-row items-end lg:justify-end justify-center lg:mr-7">
+              <!--github-->
+        <a href="https://github.com/musfirahhamid/finance" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+        <!--external link-->
+      <a href="https://tailwindcss-finance-website-landing-page.netlify.app/" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+          </div>
+      
+      </div>
+    </div>
+    <!--End of Finance-->
+
+    <!--Ecommerce-->
+    <div class="flex lg:flex-row-reverse flex-col justify-around lg:mb-36 mb-16">
+      <div class="md:w-7/12 lg:mr-20">
+        <a href="https://merairo-ecommerce-watch-store.netlify.app/"><img src="/src/images/ecommerce.png" alt="finance" class="w-full h-full rounded-lg"></a>
+      </div>
+      <!--text content-->
+      <div class="text-heading1 lg:w-5/12 lg:ml-7 lg:mr-10">
+        <h1 class="text-sky lg:text-left lg:mr-7 text-center lg:pt-0 pt-6">Featured Project</h1>
+        <h1 class=" text-4xl font-semibold lg:text-left transition hover:ease-linear hover:duration-500 hover:text-sky cursor-pointer pt-2 lg:pb-0 pb-2 lg:mr-7 text-center"><a href="https://merairo-ecommerce-watch-store.netlify.app//">Merairo</a></h1>
+       
+          <ul class="lg:-mr-40 lg:-ml-4 mx-5 bg-bgHover list-inside list-disc lg:mt-3 lg:px-8 px-4 py-2 lg:py-5 text-sm border border-bgHover rounded-lg">
+            <li>Merairo is the site canvas for nearly any type of eCommerce website. It is a fully equipped and features-packed template that covers the process of your site creation and makes establishing a page an easy task
+              </li>
+            <li><span class="text-sky">Full-width banner, neat gallery,sticky drop-down navigation, animation,cart,contact,product details and widget-rich footer</span>, it is all there, ready for you to utilize it.</li>
+            <li>This is a Tailwind CSS website template, so you know it follows all the latest trends. In other words, your website will
+              run smoothly on modern devices and platforms</li>
+          </ul>
+          <p class="lg:text-left text-center text-sm py-3 lg:mr-7">VS Code &nbsp; &nbsp; &nbsp; &nbsp; npm &nbsp; &nbsp; &nbsp; &nbsp;  CSS3 &nbsp; &nbsp; &nbsp; &nbsp; AOS &nbsp; &nbsp; &nbsp; &nbsp; HTML5</p>
+
+          <div class="flex flex-row items-end lg:justify-start justify-center lg:mr-7">
+              <!--github-->
+        <a href="https://github.com/musfirahhamid/online-ecommerce-watch-store-" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+        <!--external link-->
+      <a href="https://merairo-ecommerce-watch-store.netlify.app/" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+          </div>
+      
+      </div>
+    </div>
+    <!--End of Ecommerce-->
+
+<!--gym-->
+<div class="flex lg:flex-row flex-col justify-around lg:mb-36 mb-16">
+  <div class="md:w-7/12">
+    <a href="https://local-gym-website-template.netlify.app/"><img src="/src/images/gym.png" alt="finance" class="w-full h-full rounded-lg"></a>
+  </div>
+  <!--text content-->
+  <div class="text-heading1 lg:w-5/12 lg:mr-24 lg:ml-10">
+    <h1 class="text-sky lg:text-right lg:mr-7 text-center lg:pt-0 pt-6">Featured Project</h1>
+    <h1 class=" text-4xl font-semibold lg:text-right transition hover:ease-linear hover:duration-500 hover:text-sky cursor-pointer pt-2 lg:pb-0 pb-2 lg:mr-7 text-center"><a href="https://local-gym-website-template.netlify.app/">The Fitness Pack</a></h1>
+   
+      <ul class="lg:-ml-44 mx-5 bg-bgHover list-inside list-disc lg:mt-3 lg:px-8 px-4 py-2 lg:py-5 text-sm border border-bgHover rounded-lg">
+        <li>The Fitness Pack is the best website template that works fantastically well for your action and sports facility. The tool is versatile and highly adaptive, as well as welcomes any customization tweak you would like to perform.</li>
+        <li>With the up-to-the-minute minimalistic design, everyone will have a pleasant experience skimming
+          through your content regardless of the device they use.</li>
+        <li>It features a <span class="text-sky">full-screen slider,feature section, testimonaia section, Call-to-action buttons, scrolling animations,social media icon, contact form and footer</span>.
+        </li>
+      </ul>
+      <p class="lg:text-right text-center text-sm py-3 lg:mr-7">VS Code &nbsp; &nbsp; &nbsp; &nbsp; npm &nbsp; &nbsp; &nbsp; &nbsp; tailwind CSS &nbsp; &nbsp; &nbsp; &nbsp; jquery &nbsp; &nbsp; &nbsp; &nbsp; HTML5</p>
+
+      <div class="flex flex-row items-end lg:justify-end justify-center lg:mr-7">
+          <!--github-->
+    <a href="https://github.com/musfirahhamid/gym-website-template" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+    <!--external link-->
+  <a href="https://local-gym-website-template.netlify.app/" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+      </div>
+  
+  </div>
+</div>
+<!--End of gym-->
+
+<!--Show More-->
+<div id="show-more" class="flex justify-center lg:mr-40"><a href="javascript:void(0)" class="text-sky text-lg   bg-bgHover border border-sky px-5 py-3 rounded-lg">Show More</a></div>
+
+
+<div id="show-more-content">
+  <!--Book Mark-->
+<div class="flex lg:flex-row-reverse flex-col justify-around lg:mb-36 mb-16">
+  <div class="md:w-7/12 lg:mr-20">
+    <a href="https://bookmark-landing-page-by-musfirah.netlify.app/"><img src="/src/images/bookmark.png" alt="BookMark" class="w-full h-full rounded-lg"></a>
+  </div>
+  <!--text content-->
+  <div class="text-heading1 lg:w-5/12 lg:ml-7 lg:mr-10">
+    <h1 class="text-sky lg:text-left lg:mr-7 text-center lg:pt-0 pt-6">Featured Project</h1>
+    <h1 class=" text-4xl font-semibold lg:text-left transition hover:ease-linear hover:duration-500 hover:text-sky cursor-pointer pt-2 lg:pb-0 pb-2 lg:mr-7 text-center"><a href="https://bookmark-landing-page-by-musfirah.netlify.app/">BookMark Manager</a></h1>
+   
+      <ul class="lg:-mr-40 lg:-ml-4 mx-5 bg-bgHover list-inside list-disc lg:mt-3 lg:px-8 px-4 py-2 lg:py-5 text-sm border border-bgHover rounded-lg">
+        <li>Bookish is in tune with all popular devices and web browsers.The experience browsing through your website will always be first-class.</li>
+        <li>bookish <span class="text-sky">rocks  CTA, testimonials, flexible slider, social icons, practical Accordion,footer and more.</span></li>
+        <li>Bookish is a professional solution for domain registrars and hosting companies alike. </li>
+      </ul>
+      <p class="lg:text-left text-center text-sm py-3 lg:mr-7">VS Code &nbsp; &nbsp; &nbsp; &nbsp; npm &nbsp; &nbsp; &nbsp; &nbsp; tailwind CSS &nbsp; &nbsp; &nbsp; &nbsp; SVGs &nbsp; &nbsp; &nbsp; &nbsp; HTML5</p>
+
+      <div class="flex flex-row items-end lg:justify-start justify-center lg:mr-7">
+          <!--github-->
+    <a href="https://github.com/musfirahhamid/bookmark-landing-page" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+    <!--external link-->
+  <a href="https://bookmark-landing-page-by-musfirah.netlify.app/" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+      </div>
+  
+  </div>
+</div>
+<!--End of Bookmark-->
+
+<!--Fylo-->
+<div class="flex lg:flex-row flex-col justify-around lg:mb-36 mb-16">
+  <div class="md:w-7/12">
+    <a href="https://fylo-dark-theme-landing-page-musfirah.netlify.app/"><img src="/src/images/fylo.png" alt="filo" class="w-full h-full rounded-lg"></a>
+  </div>
+  <!--text content-->
+  <div class="text-heading1 lg:w-5/12 lg:mr-24 lg:ml-10">
+    <h1 class="text-sky lg:text-right lg:mr-7 text-center lg:pt-0 pt-6">Featured Project</h1>
+    <h1 class=" text-4xl font-semibold lg:text-right transition hover:ease-linear hover:duration-500 hover:text-sky cursor-pointer pt-2 lg:pb-0 pb-2 lg:mr-7 text-center"><a href="https://fylo-dark-theme-landing-page-musfirah.netlify.app/">Fylo</a></h1>
+   
+      <ul class="lg:-ml-44 mx-5 bg-bgHover list-inside list-disc lg:mt-3 lg:px-8 px-4 py-2 lg:py-5 text-sm border border-bgHover rounded-lg">
+        <li>Fylo is a modern and stylish File Management HTML template.</li>
+        <li>Designed for creative designers, agencies, freelancers, photographers, or any creative profession.</li>
+        <li>It is <span class="text-sky">fully responsive, making it pixel sharp on any device. It has an animating features section, working CTA,scrolling animation, stylish background SVGs and rich footer.</span> Built with clean and organized code, this template is very easy to customize.</li>
+      </ul>
+      <p class="lg:text-right text-center text-sm py-3 lg:mr-7">VS Code &nbsp; &nbsp; &nbsp; &nbsp; npm &nbsp; &nbsp; &nbsp; &nbsp; tailwind CSS &nbsp; &nbsp; &nbsp; &nbsp; JavaScript &nbsp; &nbsp; &nbsp; &nbsp; HTML5</p>
+
+      <div class="flex flex-row items-end lg:justify-end justify-center lg:mr-7">
+          <!--github-->
+    <a href="https://github.com/musfirahhamid/fylo" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+    <!--external link-->
+  <a href="https://fylo-dark-theme-landing-page-musfirah.netlify.app/" class="hover:text-sky px-3"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="25" height="25"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+      </div>
+  
+  </div>
+</div>
+<!--End of fylo-->
+
+<div id="show-less" class="flex justify-center  lg:mr-40"> <a href="javascript:void(0)" class="text-sky text-lg   bg-bgHover border border-sky px-5 py-3 rounded-lg">Show less</a></div>
+</div>
+
+
+
+  </section>
+<!--End of Work-->
+
+
+<!--Contact Form-->
+<section id="contact" class="relative block py-24 lg:pt-0  lg:mt-80 mt-24">
+  <div class="container mx-auto px-4">
+   
+    <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+      <div class="w-full lg:w-6/12 px-4">
+        <h1 class="text-heading1 text-center text-3xl pt-16 lg:pt-5 pb-5 font-semibold">Reach Out To Me !!!!!!</h1>
+        <div class="flex justify-center mb-8">
+          <a href="tel:+923497818424" class="px-2">
+            <i class="fa fa-phone text-xl border rounded-full px-3 py-3 text-subHeading   hover:border-sky hover:text-sky"></i>
+ </a>
+          <a href="https://github.com/musfirahhamid" class="px-2">
+            <i class="fab fa-github text-xl border rounded-full px-3 py-3 text-subHeading   hover:border-sky hover:text-sky"></i>
+ </a>
+        <a href="https://twitter.com/musfirahhamid"class="px-2"><i class="fab fa-twitter text-xl border rounded-full px-3 py-3 text-subHeading  hover:border-sky hover:text-sky"></i></a>
+        <a href="https://www.linkedin.com/in/frontendengineer/"class="px-2"> <i class="fab fa-linkedin text-xl border rounded-full px-3 py-3 text-subHeading hover:border-sky hover:text-sky"></i></a>
+        </div>
+        <div
+          class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-bgHover"
+        >
+          <div class="flex-auto p-5 lg:p-10">
+            <h4 class="text-2xl text-subHeading font-semibold">Want to work with me?</h4>
+            <p class="leading-relaxed mt-1 mb-4 text-subHeading">
+              Complete this form and I will get back to you in 24 hours.
+            </p>
+            <form id="register">
+              <div class="relative w-full mb-3 mt-8">
+                <label
+                  class="block uppercase text-subHeading text-xs font-bold mb-2"
+                  for="full-name"
+                  >Full Name</label
+                ><input
+                name="Name"
+                  type="text"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  placeholder="Full Name"
+                  style="transition: all 0.15s ease 0s;"
+                />
+              </div>
+              <div class="relative w-full mb-3">
+                <label
+                  class="block uppercase text-subHeading text-xs font-bold mb-2"
+                  for="email"
+                  >Email</label
+                ><input
+                name="Email"
+                  type="email"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  placeholder="Email"
+                  style="transition: all 0.15s ease 0s;"
+                  required
+                />
+              </div>
+              <div class="relative w-full mb-3">
+                <label
+                  class="block uppercase text-subHeading text-xs font-bold mb-2"
+                  for="message"
+                  >Message</label
+                ><textarea
+                name="Subject"
+                  rows="4"
+                  cols="80"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  placeholder="Type a message..."
+                ></textarea>
+              </div>
+              <div class="text-center mt-6">
+                <button
+                id ="send" type="submit" name="send"
+                  class="bg-main text-sky active:bg-gray-700 text-sm  uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 hover:border border-sky transition hover:ease-linear hover:duration-500"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Contact-->
+
+
+<!--Footer-->
+<a href="#" class="flex justify-center text-center  text-subHeading hover:text-sky pb-3">&copy; All rights reserved to Musfirah</a>
+<!--End of footer-->
+
+</main>
+ 
+
+
+ <script src="script.js"></script>
+</body>
+</html>
