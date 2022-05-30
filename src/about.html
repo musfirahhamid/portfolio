@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/output.css">
+    <!--                                                AOS      -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
      <!--                                        jquery              -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -22,7 +25,7 @@
 <body class="bg-main font-libra overflow-x-hidden scroll-smooth scroll-m-12">
 <!--header-->
 <nav
-class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
+class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 " data-aos="fade-down"
 >
 <div
   class="container px-4 mx-auto flex flex-wrap items-center justify-between"
@@ -111,7 +114,7 @@ class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px
   <!-- End of Header-->
     <section id="about" class="mt-36 lg:mx-16 mx-8 lg:ml-44 mb-36">
         <h1 class="text-heading1 font-bold text-4xl pb-7 underline underline-offset-4 decoration-4 decoration-heading1 lg:text-left text-center">About Me</h1>
-        <div class="flex justify-center lg:flex-row flex-col-reverse">
+        <div class="flex justify-center lg:flex-row flex-col-reverse" data-aos="fade-right">
            <div class="lg:w-5/12">
                <p class="text-heading1 leading-7 text-justify pt-4">Hello! I am Musfirah Hamid, recent graduate Computer Systems Engineer.I enjoy creating things that live on the internet. My interest in web Development begin in 2020 when covid-19 hit the world and quarantined everything. My crave for softskills headed me towards Websites and I started building simple websites using HTML and CSS.Later on, my interest got high.</p>
                <p class="text-heading1 pt-4 leading-7 lg:text-justify text-left">Covering the journey of two years, today I'm a <span class="text-sky">freelance web designer and  developer</span>, working with multiple clients with a number of diverse projects.
@@ -128,7 +131,7 @@ class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px
               </a>
               </div>
            </div>
-           <div class="border-4 border-sky rounded lg:ml-auto lg:mr-44 mx-8  h-80 lg:mt-20 w-64 mb-7">
+           <div class="border-4 border-sky rounded lg:ml-auto lg:mr-44 mx-8  h-80 lg:mt-20 w-64 mb-7" data-aos="fade-left">
                <img src="/src/images/about.jpg" alt="about" class="-mt-3  -ml-4 rounded w-96 ">
            </div>
         </div>
@@ -142,7 +145,7 @@ class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px
     <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
       <div class="w-full lg:w-6/12 px-4">
         <h1 class="text-heading1 text-center text-3xl pt-16 lg:pt-5 pb-5 font-semibold">Reach Out To Me !!!!!!</h1>
-        <div class="flex justify-center mb-8">
+        <div class="flex justify-center mb-8" data-aos="zoom-in">
           <a href="tel:+923497818424" class="px-2">
             <i class="fa fa-phone text-xl border rounded-full px-3 py-3 text-subHeading   hover:border-sky hover:text-sky"></i>
  </a>
@@ -153,7 +156,7 @@ class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px
         <a href="https://www.linkedin.com/in/frontendengineer/"class="px-2"> <i class="fab fa-linkedin text-xl border rounded-full px-3 py-3 text-subHeading hover:border-sky hover:text-sky"></i></a>
         </div>
         <div
-          class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-bgHover"
+          class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-bgHover" data-aos="zoom-in"
         >
           <div class="flex-auto p-5 lg:p-10">
             <h4 class="text-2xl text-subHeading font-semibold">Want to work with me?</h4>
@@ -223,6 +226,18 @@ class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px
 <a href="#" class="flex justify-center text-center  text-subHeading hover:text-sky pb-3">&copy; All rights reserved to Musfirah</a>
 <!--End of footer-->
 
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="script.js"></script>
+      <script>
+        AOS.init(
+          {
+            delay:200,
+            duration:1200,
+            once:false
+          }
+        )
+      </script>
 </body>
 </html>
