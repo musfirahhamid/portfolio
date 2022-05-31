@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Libre+Franklin:wght@300;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Musfirah Hamid</title>
 </head>
 <body class="bg-main font-libra overflow-x-hidden scroll-smooth scroll-m-12">
 <!--header-->
@@ -172,7 +172,7 @@ class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px
                 ><input
                 name="Name"
                   type="text"
-                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm font-bold shadow focus:outline-none focus:ring w-full"
                   placeholder="Full Name"
                   style="transition: all 0.15s ease 0s;"
                 />
@@ -185,11 +185,34 @@ class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px
                 ><input
                 name="Email"
                   type="email"
-                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm font-bold shadow focus:outline-none focus:ring w-full"
                   placeholder="Email"
                   style="transition: all 0.15s ease 0s;"
                   required
                 />
+              </div>
+              <div class="relative w-full mb-3">
+                <label
+                  class="block uppercase text-subHeading text-xs font-bold mb-2"
+                  for="email"
+                  >Choose Relevent Field</label
+                ><input
+                list="Service"
+                id="Services"
+                name="Services"
+                  
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm font-bold shadow focus:outline-none focus:ring w-full"
+                  placeholder="Select"
+                  style="transition: all 0.15s ease 0s;"
+                  required
+                />
+                <datalist id="Service">
+                  <option value="Landing Page Design">
+                  <option value="PSD to HTML template">
+                  <option value="Figma to HTML">
+                  <option value="Custom Website">
+                  <option value="Other">
+              </datalist>
               </div>
               <div class="relative w-full mb-3">
                 <label
@@ -200,7 +223,7 @@ class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px
                 name="Subject"
                   rows="4"
                   cols="80"
-                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  class="border-0 px-3 py-3 placeholder-gray-900 text-gray-900 bg-white rounded text-sm font-bold shadow focus:outline-none focus:ring w-full"
                   placeholder="Type a message..."
                 ></textarea>
               </div>
